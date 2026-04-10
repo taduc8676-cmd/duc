@@ -1,5 +1,5 @@
 let b = prompt("Nhập vào số b:");
-function kiemTraChanLe(b) {
+function kiemTra(b) {
     if (b % 2 === 0) {
         return "Chẵn";
     } else {
@@ -7,7 +7,7 @@ function kiemTraChanLe(b) {
     }
 }
 
-console.log("Kiểm tra chẵn lẻ:", kiemTraChanLe(b));
+console.log("Kiểm tra chẵn lẻ:", kiemTra(b));
 
 function laSoNguyenTo(b) {
     if (b < 2){ 
@@ -43,7 +43,7 @@ const kiemTraChanLe = function(a) {
 
 console.log("Chẵn hay lẻ:", kiemTraChanLe(a));
 
-const laSoNguyenTo = function(a){
+const NguyenTo = function(a){
     if (a<2){
         return false;
     }
@@ -52,10 +52,10 @@ const laSoNguyenTo = function(a){
     }
     return true;
 };
-console.log("số nguyên tố : ", laSoNguyenTo(a))
+console.log("số nguyên tố : ", NguyenTo(a))
 
 for (let i = 1; i<= a; i++){
-    if (laSoNguyenTo(a)){
+    if (NguyenTo(a)){
         console.log(i);
 }
 }
@@ -68,10 +68,10 @@ for ( let i=1; i<=a; i++){
 console.log("Tổng = ",tong2);
 // cách 3
 let n = prompt("nhập vào n:")
-const kiemtrachanle = (n) => (n%2 === 0 ? "Chẵn" : "Lẻ");
-console.log("kiểm tra chẵn lẻ : ", kiemtrachanle(n));
+const chanle = (n) => (n%2 === 0 ? "Chẵn" : "Lẻ");
+console.log("kiểm tra chẵn lẻ : ", chanle(n));
 
-const laSoNguyenTo = (n) =>{
+const laSoNguyen = (n) =>{
     if(n<2){
         return false
     }
@@ -82,7 +82,7 @@ const laSoNguyenTo = (n) =>{
 };
 console.log("Các số nguyên tố : ");
  for (let i = 1; i<=n; i++){
-    if(laSoNguyenTo(i)){
+    if(laSoNguyen(i)){
     console.log(i);
 }
 }
